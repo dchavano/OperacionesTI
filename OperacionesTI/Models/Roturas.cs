@@ -40,10 +40,13 @@ namespace OperacionesTI.Models
         public string Ticket { get; set; }
         [Required]
         [Display(Name = "Fecha envio al CD")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime FechaEnvioaCD { get; set; }
         [Display(Name = "Fecha recibido en CD")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime FechaRecibido { get; set; }
         [Display(Name = "Fecha de reparación")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime FechaReparado { get; set; }
         [Required]
         [Display(Name = "Estado de la reparación")]
@@ -51,14 +54,17 @@ namespace OperacionesTI.Models
         [MaxLength(255)]
         public string Observaciones { get; set; }
         [Display(Name = "Fecha envio a Micro")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime Fechaenviomicro { get; set; }
         [Display(Name = "Fecha autorización de gerencia")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime Fechaautogarencia { get; set; }
         [Display(Name = "Nº de presupuesto")]
         public string Presupuesto { get; set; }
         [Display(Name = "Valor de presupuesto")]
         public Decimal valorMyProperty { get; set; }
         [Display(Name = "Fecha recepción de Micro")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime Fecharecemicro { get; set; }
         [Display(Name = "Aplica a capex")]
         [MaxLength(4)]
