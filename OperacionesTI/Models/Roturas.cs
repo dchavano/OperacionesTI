@@ -72,6 +72,6 @@ namespace OperacionesTI.Models
 
         //  Un, Bandera, local, marca, modelo, falla, estadoreparacion
 
-
+        // https://docs.microsoft.com/es-es/aspnet/core/data/ef-rp/complex-data-model
     }
 }
