@@ -70,7 +70,10 @@ namespace OperacionesTI.Models
         [MaxLength(4)]
         public string Capex { get; set; }
 
-        //  Un, Bandera, local, marca, modelo, falla, estadoreparacion
+
+        public virtual Roturas_UN UN { get; set; }
+
+        // Bandera, local, marca, modelo, falla, estadoreparacion
 
         // https://docs.microsoft.com/es-es/aspnet/core/data/ef-rp/complex-data-model
     }

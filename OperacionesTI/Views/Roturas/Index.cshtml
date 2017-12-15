@@ -1,0 +1,149 @@
+﻿@model IEnumerable<OperacionesTI.Models.Roturas>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Serial)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdBandera)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdLocal)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdMarca)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdModelo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Identificacion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdFalla)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Ticket)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaEnvioaCD)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaRecibido)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaReparado)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdEstadoReparacion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Observaciones)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fechaenviomicro)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fechaautogarencia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Presupuesto)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.valorMyProperty)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fecharecemicro)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Capex)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UN)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Serial)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdBandera)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdLocal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdMarca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdModelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Identificacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdFalla)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ticket)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaEnvioaCD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaRecibido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaReparado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdEstadoReparacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Observaciones)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fechaenviomicro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fechaautogarencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Presupuesto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.valorMyProperty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecharecemicro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Capex)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UN.IdUN)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdRotura">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdRotura">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdRotura">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

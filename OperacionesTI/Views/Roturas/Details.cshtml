@@ -1,0 +1,138 @@
+﻿@model OperacionesTI.Models.Roturas
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Roturas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Serial)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Serial)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdBandera)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdBandera)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdLocal)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdLocal)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdMarca)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdMarca)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdModelo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdModelo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Identificacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Identificacion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdFalla)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdFalla)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ticket)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ticket)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaEnvioaCD)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FechaEnvioaCD)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaRecibido)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FechaRecibido)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaReparado)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FechaReparado)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdEstadoReparacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdEstadoReparacion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Observaciones)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Observaciones)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fechaenviomicro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fechaenviomicro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fechaautogarencia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fechaautogarencia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Presupuesto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Presupuesto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.valorMyProperty)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.valorMyProperty)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecharecemicro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Fecharecemicro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Capex)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Capex)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.UN)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UN.IdUN)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdRotura">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

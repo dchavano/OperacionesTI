@@ -11,9 +11,10 @@ using System;
 namespace OperacionesTI.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20171215202959_roturas2")]
+    partial class roturas2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -243,9 +244,7 @@ namespace OperacionesTI.Data.Migrations
                     b.Property<int>("IdUN")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("UnidadNegocio")
-                        .IsRequired()
-                        .HasMaxLength(35);
+                    b.Property<string>("UnidadNegocio");
 
                     b.HasKey("IdUN");
 
