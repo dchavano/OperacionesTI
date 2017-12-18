@@ -50,7 +50,7 @@ namespace OperacionesTI.Models
         public DateTime FechaReparado { get; set; }
         [Required]
         [Display(Name = "Estado de la reparación")]
-        public int IdEstadoReparacion { get; set; }
+        public int IdEstado { get; set; }
         [MaxLength(255)]
         public string Observaciones { get; set; }
         [Display(Name = "Fecha envio a Micro")]
@@ -72,8 +72,12 @@ namespace OperacionesTI.Models
 
 
         public virtual Roturas_UN UN { get; set; }
+        public virtual Roturas_Bandera Bandera { get; set; }
+        public virtual Roturas_Local Local { get; set; }
+        // marca, modelo, falla, estadoreparacion
 
-        // Bandera, local, marca, modelo, falla, estadoreparacion
+
+        public virtual Roturas_Estado Estado { get; set; }
 
         // https://docs.microsoft.com/es-es/aspnet/core/data/ef-rp/complex-data-model
     }
